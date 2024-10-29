@@ -132,7 +132,15 @@ export default function EasyPackLanding() {
   );
 }
 
-function FeatureCard({ icon, title, description }: any) {
+function FeatureCard({
+  icon,
+  title,
+  description,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}) {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md text-center">
       <div className="mb-4">{icon}</div>
@@ -142,7 +150,13 @@ function FeatureCard({ icon, title, description }: any) {
   );
 }
 
-function StepCard({ number, description }: any) {
+function StepCard({
+  number,
+  description,
+}: {
+  number: number;
+  description: string;
+}) {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md text-center">
       <div className="w-12 h-12 bg-[#006e32] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
