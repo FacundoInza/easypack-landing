@@ -4,8 +4,6 @@ import * as React from "react";
 import Link from "next/link";
 import {
   ArrowRight,
-  ChevronLeft,
-  ChevronRight,
   Heart,
   Leaf,
   Mail,
@@ -322,6 +320,8 @@ export default function EasyPackLanding() {
     </div>
   );
 }
+
+//eslint-disable-next-line
 function FeatureCard({ icon, title, description }: any) {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -332,6 +332,7 @@ function FeatureCard({ icon, title, description }: any) {
   );
 }
 
+//eslint-disable-next-line
 function StepCard({ number, description, imageUrl }: any) {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md text-center">
